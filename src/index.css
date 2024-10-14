@@ -84,6 +84,12 @@ button {
   text-align: center;
 }
 
+footer {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 980px) {
   .inputs {
     padding: 2.5rem;

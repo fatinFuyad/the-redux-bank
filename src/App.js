@@ -8,7 +8,7 @@ function App() {
   const customerName = useSelector((store) => store.customer.fullName);
   return (
     <div>
-      <h1>🏦 The React-Redux Bank ⚛️</h1>
+      <Header />
       {!customerName ? (
         <CreateCustomer />
       ) : (
@@ -18,7 +18,24 @@ function App() {
           <BalanceDisplay />
         </>
       )}
+      <Footer />
     </div>
+  );
+}
+
+function Header() {
+  return (
+    <div>
+      <h1>🏦 The React-Redux Bank ⚛️</h1>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <p>&copy; Copyright {new Date().getFullYear()} by developer </p>
+    </footer>
   );
 }
 
